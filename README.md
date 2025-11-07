@@ -31,6 +31,42 @@ A complete, production-ready workflow system for building web products with **AI
 
 ---
 
+## What Makes This Notable
+
+### 1. Mobile-First Oversight
+Most AI coding workflows assume you're at a computer reviewing code. This workflow is **built around reviewing work on your phone** via Google Drive sync. Manager approvals happen in 5-10 minutes while commuting—no IDE, no diff review needed. Just read summary, make decision.
+
+### 2. Research-First Architecture
+Starts before coding—**automating the "should we even build this?" decision**. Most AI dev tools assume you know what to build. This does:
+- Competitive analysis
+- Market sizing
+- Technical feasibility assessment
+- Go-to-market strategy
+- Risk assessment
+
+...before writing a single line of code. Addresses the higher-leverage decision point.
+
+### 3. Session-Based Checkpointing
+AI doesn't run until "done." **Works in discrete sessions with mandatory documentation and approval gates**. Creates natural stopping points that prevent runaway behavior while maintaining oversight without micromanagement.
+
+### 4. Clean Separation of Concerns
+```
+GitHub = single source of truth (code, docs, tasks, history)
+Google Drive = thin approval layer only (synced, no MCP write access needed)
+```
+Avoids the messy "which system is authoritative?" problem that plagues multi-tool workflows.
+
+### 5. Async by Design
+**Built for solo founders and small teams working asynchronously**. AI does deep work when you're not available, then pauses for input on key decisions. You're orchestrating, not babysitting.
+
+### 6. Complete Traceability
+**Every decision links back**: code → tasks → PRD → research. Wondering why something was built that way? There's a paper trail. Rare in AI-generated codebases.
+
+### The Meta-Point
+This treats **AI as a managed contractor**, not a copilot or autonomous agent. You define the project, check in at milestones, maintain control—without writing code yourself.
+
+---
+
 ## How It Works: 5-Phase Workflow
 
 ```
