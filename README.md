@@ -1,21 +1,22 @@
 # Agentic Research Workflow
 
 > **Build web products with AI agents and human oversight**
->
-> From business idea → research → planning → production code → manager approval
+> 
+> Launch agentic business idea research on your phone with Claude. When you're ready to build, your research seamlessly becomes code. Human in loop Manager oversight included
+> 
+> From business idea → Claude handles research based on pre-defined skill → Claude saves documentation to Google Drive MCP for anywhere access → github creation copies from Drive & agents begin task list → agentic session notes are documented and frequently break for manager approval -> manager approves session notes from Google Drive 
 
-![Workflow](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+![Workflow](https://img.shields.io/badge/Status-Testing-blue)
 ![Based-On](https://img.shields.io/badge/Based%20On-ai--dev--tasks-orange)
 
 ---
 
 ## What This Is
 
-A complete, production-ready workflow system for building web products with **AI-assisted development** and **human oversight**. Perfect for solo founders, small teams, and anyone who wants to move from idea to code faster while maintaining quality and control.
+A complete workflow system for building web products with **AI-assisted development** and **human oversight**. Perfect for solo founders, small teams, and anyone who wants to move from idea to code faster while maintaining quality and control.
 
 **Key Features**:
-- 🔍 **Research Automation** - Generate comprehensive market and technical research in 30 minutes
+- 🔍 **Research Automation** - Generate comprehensive market and technical research in 30 minutes from your phone or desktop.
 - 📋 **Intelligent Planning** - PRD generation and hierarchical task breakdown
 - 🤖 **AI Development** - Session-based coding with automatic context management
 - 👨‍💼 **Manager Oversight** - Review and approve work on your phone via Google Drive sync
