@@ -122,24 +122,33 @@ Continue iterating until the user signals satisfaction.
 When the user indicates readiness to save:
 
 1. Confirm the project name
-2. Create folder structure at: `AI_Projects/{ProjectName}/`
-3. Save all documents to Google Drive folder
-4. Confirm successful save with folder path
+2. Save each document to Google Drive via the configured endpoint
+3. For each document, send a POST request with:
+   - `project`: Project name
+   - `filename`: Document filename
+   - `content`: Full markdown content
+4. Confirm successful save with folder link
+
+**How to Set Up Google Drive Integration**:
+
+The skill needs a backend endpoint to save documents. Options:
+- **Google Apps Script** (Recommended): Free, serverless, integrates with Google Drive
+- **Custom API**: Your own backend service
+
+See the main documentation for setup instructions specific to your implementation.
 
 **Folder Structure Created**:
 ```
 AI_Projects/{ProjectName}/
-├── CLAUDE.md
-├── 00_PROJECT_OVERVIEW.md
-├── 01_Research_Brief.md
-├── 02_Market_Landscape.md
-├── 03_Technical_Feasibility.md
-├── 04_Go_To_Market.md
-├── 05_Risk_Assessment.md
-└── plan.md
+└── docs/
+    ├── 00_PROJECT_OVERVIEW.md
+    ├── 01_Research_Brief.md
+    ├── 02_Market_Landscape.md
+    ├── 03_Technical_Feasibility.md
+    ├── 04_Go_To_Market.md
+    ├── 05_Risk_Assessment.md
+    └── plan.md
 ```
-
-Adjust folder structure at your discretion based on project needs.
 
 ## Research Best Practices
 

@@ -134,3 +134,4 @@ dmypy.json
 .env.local
 .env.*.local
 config/local*
+desktop.ini

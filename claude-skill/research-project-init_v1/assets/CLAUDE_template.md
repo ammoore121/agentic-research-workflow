@@ -2,17 +2,16 @@
 
 ## Metadata
 
-GitHub: owner/repo-handle
+GitHub: {your-username}/{repo-name}
 Status: [Research | In Development | Active | Maintenance]
 Owner: [Name] (@github-handle)
 Last Updated: YYYY-MM-DD
 
-Strategic Docs: https://drive.google.com/drive/folders/[FOLDER_ID]
-- Market Analysis: [Link to 02_Market_Landscape.md]
-- MVP Spec: [Link to 03_MVP_Spec.md]
-- Technical Feasibility: [Link to 04_Technical_Feasibility.md]
-- Risk Assessment: [Link to 05_Risk_Assessment.md]
-- Plan: [Link to plan.md]
+Strategic Docs: See docs/ folder
+- Market Analysis: docs/02_Market_Landscape.md
+- Technical Feasibility: docs/03_Technical_Feasibility.md
+- Risk Assessment: docs/05_Risk_Assessment.md
+- Plan: docs/plan.md
 
 ---
 

@@ -15,7 +15,7 @@ This is a template GitHub repository for AI-assisted development with research, 
 ## What This Template Includes
 
 ### 📋 Planning & Research
-- `docs/` - Research documents from [research-project-init skill](../Workflow_References/_Skills/research-project-init_v1/)
+- `docs/` - Research documents from research-project-init Claude Skill
 - `tasks/create-prd.md` - Prompt for creating Product Requirements Documents
 - `tasks/generate-tasks.md` - Prompt for breaking PRDs into implementation tasks
 - `tasks.md` - Active task list with hierarchical numbering (from [ai-dev-tasks](https://github.com/snarktank/ai-dev-tasks))
@@ -38,9 +38,9 @@ This is a template GitHub repository for AI-assisted development with research, 
 
 ## Workflow: Research → Planning → Development
 
-### Phase 1: Research (Google Drive)
+### Phase 1: Research
 
-**Tool**: [research-project-init Claude Skill](../Workflow_References/_Skills/research-project-init_v1/)
+**Tool**: research-project-init Claude Skill (see setup instructions)
 
 **Input**: Business idea or feature description
 
@@ -599,7 +599,7 @@ After session is approved:
 - **Docs**: [docs/README.md](docs/README.md)
 
 ### Related Tools
-- **Research Skill**: [research-project-init](../Workflow_References/_Skills/research-project-init_v1/) - Generates research documents
+- **Research Skill**: research-project-init - Generates research documents (install via setup guide)
 - **Task Generation**: [ai-dev-tasks](https://github.com/snarktank/ai-dev-tasks) - Task methodology
 - **Claude**: https://claude.ai - AI assistant for development
 

@@ -126,7 +126,7 @@ Costs:
 ### Create Repository
 
 ```bash
-gh repo create meeting-notes-ai --template ammoore121/agentic-research-workflow
+gh repo create meeting-notes-ai --template {your-template-url}
 git clone https://github.com/{username}/meeting-notes-ai
 cd meeting-notes-ai
 ```
@@ -134,10 +134,12 @@ cd meeting-notes-ai
 ### Copy Research to GitHub
 
 ```bash
-# Copy from Drive to GitHub
-cp "G:\My Drive\AI_Projects\Meeting_Notes_AI\docs\*" docs/
+# Copy from Google Drive to GitHub
+# Navigate to your synced Google Drive folder and copy docs/*.md files
+# Paste them into the docs/ folder in your repository
 
-# Commit
+# Then commit
+
 git add docs/
 git commit -m "docs: Add research from research-project-init skill
 
@@ -160,7 +162,7 @@ Status: In Development
 Owner: You (@{username})
 Last Updated: 2025-11-06
 
-Strategic Docs: https://drive.google.com/drive/folders/{ID}
+Strategic Docs: See docs/ folder
 - Market Analysis: docs/02_Market_Landscape.md
 - Technical Stack: docs/03_Technical_Feasibility.md
 - Go-To-Market: docs/04_Go_To_Market.md

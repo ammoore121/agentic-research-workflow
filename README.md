@@ -4,7 +4,7 @@
 > 
 > Launch agentic business idea research on your phone with Claude. When you're ready to build, your research seamlessly becomes code. Human in loop Manager oversight included
 > 
-> From business idea → Claude handles research based on pre-defined skill → Claude saves documentation to Google Drive MCP for anywhere access → github creation copies from Drive & agents begin task list → agentic session notes are documented and frequently break for manager approval -> manager approves session notes from Google Drive 
+> From business idea → Claude handles research based on pre-defined skill → Research documents saved to Google Drive for anywhere access → GitHub repo creation copies from Drive & agents begin task list → Agentic session notes are documented with manager approval gates → Manager approves session notes from Google Drive mobile app 
 
 ![Workflow](https://img.shields.io/badge/Status-Testing-blue)
 ![Based-On](https://img.shields.io/badge/Based%20On-ai--dev--tasks-orange)
@@ -53,9 +53,9 @@ AI doesn't run until "done." **Works in discrete sessions with mandatory documen
 ### 4. Clean Separation of Concerns
 ```
 GitHub = single source of truth (code, docs, tasks, history)
-Google Drive = thin approval layer only (synced, no MCP write access needed)
+Google Drive = thin approval layer only (synced via Google Drive Desktop)
 ```
-Avoids the messy "which system is authoritative?" problem that plagues multi-tool workflows.
+Avoids the messy "which system is authoritative?" problem that plagues multi-tool workflows. Documents are saved via simple HTTP requests, not complex APIs or OAuth flows.
 
 ### 5. Async by Design
 **Built for solo founders and small teams working asynchronously**. AI does deep work when you're not available, then pauses for input on key decisions. You're orchestrating, not babysitting.
@@ -228,8 +228,8 @@ NEXT SESSION
 → Research documents saved to Google Drive
 
 # Create GitHub repo (from template)
-Use our /github-template/ or:
-gh repo create my-project --template ammoore121/agentic-research-workflow
+Use the /github-template/ directory:
+gh repo create my-project --template {your-fork-or-template-url}
 
 # Copy research to GitHub and commit
 git add docs/
@@ -326,9 +326,9 @@ Continue
 
 ## How to Share This With Friends
 
-**Send them this link**:
+**Send them the repository link** (or your fork of it):
 ```
-github.com/ammoore121/agentic-research-workflow
+{your-repo-url}
 ```
 
 **Tell them to**:
@@ -365,7 +365,7 @@ GOOGLE DRIVE = Approval Layer (Sync Only)
 **Why**:
 - GitHub provides version history and audit trail
 - Drive provides mobile-friendly manager approval
-- No MCP write access needed (Google Drive Desktop handles syncing)
+- Documents saved via simple HTTP requests (no complex APIs or OAuth)
 - Single source of truth prevents confusion
 
 ### Hierarchical Task Numbering
@@ -539,4 +539,3 @@ Ready to build?
 
 **Latest Update**: November 2025
 **Status**: Production Ready
-**Repository**: [github.com/ammoore121/agentic-research-workflow](https://github.com/ammoore121/agentic-research-workflow)

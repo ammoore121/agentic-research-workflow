@@ -5,7 +5,7 @@ This folder contains all research, analysis, and planning documents generated du
 ## What Goes Here?
 
 ### From Research Phase
-Documents created by the [research-project-init Claude Skill](../../_Skills/research-project-init_v1/):
+Documents created by the research-project-init Claude Skill:
 
 - `00_PROJECT_OVERVIEW.md` - Executive summary with go/no-go recommendation
 - `01_Research_Brief.md` - Hypothesis, research questions, success criteria
@@ -31,16 +31,16 @@ Documents created by the [research-project-init Claude Skill](../../_Skills/rese
 
 ### Step 1: Run Research Skill (on Google Drive)
 
-Use the [research-project-init skill](../../_Skills/research-project-init_v1/Skill.md):
+Use the research-project-init Claude Skill:
 
 1. Describe business idea / feature to research
 2. Answer clarifying questions
 3. Skill generates comprehensive research documents
-4. **Saved to**: `G:\My Drive\AI_Projects\{ProjectName}\docs\`
+4. **Saved to**: Your Google Drive (see setup guide)
 
 **Documents created by skill**:
 ```
-G:\My Drive\AI_Projects\{ProjectName}\
+{ProjectName}/docs/
 ├── 00_PROJECT_OVERVIEW.md
 ├── 01_Research_Brief.md
 ├── 02_Market_Landscape.md
@@ -56,12 +56,12 @@ After research skill completes:
 
 ```bash
 # Copy research docs from Drive to GitHub repo
-cp "G:\My Drive\AI_Projects\{ProjectName}\docs\*" docs/
+# Navigate to your Google Drive synced folder and copy all .md files from {ProjectName}/docs/
+# Paste them into {github-repo}/docs/
 
-# Or manually copy the files in File Explorer:
-# G:\My Drive\AI_Projects\{ProjectName}\docs\
-#   → Copy all .md files
-#   → Paste into {github-repo}\docs\
+# Or use the command line (adjust path for your OS):
+# macOS/Linux: cp ~/Drive/AI_Projects/{ProjectName}/docs/*.md docs/
+# Windows: copy "{drive-letter}:\My Drive\AI_Projects\{ProjectName}\docs\*.md" docs\
 ```
 
 ### Step 3: Create Initial Commit
@@ -195,14 +195,13 @@ If scope changes:
 ```
 ┌─────────────────────────────┐
 │ RESEARCH SKILL RUNS         │
-│ (on Google Drive)           │
+│ (Claude web or desktop)     │
 │                             │
 │ Input: Business idea        │
 │ Output: Research docs       │
-│ Location: G:\My Drive\      │
-│           AI_Projects\      │
-│           {ProjectName}\    │
-│           docs\             │
+│ Location: Google Drive      │
+│           {ProjectName}/    │
+│           docs/             │
 └──────────────┬──────────────┘
                │
                ▼
@@ -289,7 +288,7 @@ If scope changes:
 
 1. **Open Claude (Skills)**
 2. **Find**: research-project-init skill
-   - Path: [Workflow_References/Claude_Skills/research-project-init_v1/Skill.md](../../_Skills/research-project-init_v1/Skill.md)
+   - Install via: Setup guide (see main repository documentation)
 3. **Trigger**: Use phrases like:
    - "Research [business idea]"
    - "Initialize research for [feature]"
@@ -348,7 +347,7 @@ Updated: 03_Technical_Feasibility.md with findings"
 ## Troubleshooting
 
 **Q: Where did the research docs go?**
-- A: Check `G:\My Drive\AI_Projects\{ProjectName}\docs\`
+- A: Check your Google Drive (synced local folder) under {ProjectName}/docs/
 - They're in Drive until you copy them to GitHub
 
 **Q: Should I update research docs after starting development?**
@@ -370,7 +369,7 @@ Updated: 03_Technical_Feasibility.md with findings"
 
 ## Related Documents
 
-- **[research-project-init skill](../../_Skills/research-project-init_v1/Skill.md)**: Creates these research docs
+- **research-project-init skill**: Creates these research docs (see main documentation)
 - **[create-prd.md](../tasks/create-prd.md)**: Uses research to generate PRD
 - **[tasks.md](../tasks.md)**: Implementation tasks from PRD
 - **[CLAUDE.md](../CLAUDE.md)**: Project context for all work

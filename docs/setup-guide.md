@@ -58,14 +58,15 @@ This gets you familiar with the workflow before starting a real project.
 
 1. **Create GitHub repo from template**
    ```bash
-   gh repo create my-first-project --template ammoore121/agentic-research-workflow
-   ```
+   # Option A: Using GitHub CLI
+   gh repo create my-first-project --template {template-repo-url}
 
-   Or manually:
-   - Go to https://github.com/ammoore121/agentic-research-workflow
-   - Click "Use this template" → "Create a new repository"
-   - Name: `my-first-project`
-   - Make it public (easier for friends to see)
+   # Option B: Manual
+   # 1. Find the agentic-research-workflow template repo
+   # 2. Click "Use this template" → "Create a new repository"
+   # 3. Name it: my-first-project
+   # 4. Make it public (easier for friends to see)
+   ```
 
 2. **Clone to your computer**
    ```bash
@@ -221,7 +222,7 @@ Once you understand the workflow, use it for your actual project:
 
 1. **Create new GitHub repo**
    ```bash
-   gh repo create my-awesome-saas --template ammoore121/agentic-research-workflow
+   gh repo create my-awesome-saas --template {your-template-url}
    ```
 
 2. **Run research skill**
@@ -466,11 +467,11 @@ cat docs/agentic-workflow-v2.md
 **Symptom**: Can't find the template on GitHub
 
 **Solution**:
-1. Go to: https://github.com/ammoore121/agentic-research-workflow
+1. Go to: Your template repository URL (from setup guide or friend's repo)
 2. Should see a "Use this template" button
 3. If not:
    - Repo may not be public yet
-   - Try cloning instead: `git clone https://github.com/ammoore121/agentic-research-workflow my-project`
+   - Try cloning instead: `git clone {your-template-url} my-project`
 
 ---
 
@@ -492,7 +493,7 @@ cat docs/agentic-workflow-v2.md
    - Keep notes of what works/what doesn't
 
 4. **Share with friends**
-   - Send them: https://github.com/ammoore121/agentic-research-workflow
+   - Send them your fork of this repository (or the original template)
    - They can repeat your setup
 
 ---
@@ -522,7 +523,7 @@ cat docs/agentic-workflow-v2.md
 
 ```bash
 # Create new project from template
-gh repo create {project-name} --template ammoore121/agentic-research-workflow
+gh repo create {project-name} --template {your-template-url}
 
 # Clone existing project
 git clone https://github.com/{your-username}/{project-name}

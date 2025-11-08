@@ -66,7 +66,8 @@ This document describes the complete workflow for AI-assisted development from r
 ┌─────────────────────────────────────────────────────────┐
 │ GOOGLE DRIVE (Mirror & Approval Layer)                  │
 │                                                         │
-│ G:\My Drive\AI_Projects\{ProjectName}\                  │
+│ Via Google Drive Desktop sync:                          │
+│ {ProjectName}/                                          │
 │                                                         │
 │ ├── docs/                  (mirrors GitHub)             │
 │ │   ├── research docs                                  │
@@ -97,7 +98,7 @@ This document describes the complete workflow for AI-assisted development from r
 
 **Drive Mirror Benefits**:
 - ✓ Mobile-friendly approval workflow
-- ✓ No MCP write access needed
+- ✓ Simple HTTP POST integration (no complex APIs or OAuth flows)
 - ✓ Manager can review on phone
 - ✓ Automatic sync via Google Drive Desktop
 - ✓ Separation of concerns (code vs approval)
@@ -133,7 +134,7 @@ This document describes the complete workflow for AI-assisted development from r
 
 ### Phase 1: Research (Google Drive)
 
-**Tool**: [research-project-init Claude Skill](Workflow_References/_Skills/research-project-init_v1/)
+**Tool**: research-project-init Claude Skill
 
 **Location**: Google Drive / Claude Skills interface
 
@@ -222,7 +223,7 @@ G:\My Drive\AI_Projects\{ProjectName}\docs\
 
 ### Phase 3: Create PRD (Product Requirements Document)
 
-**Tool**: [tasks/create-prd.md](Workflow_References/_Templates/github-project-template/tasks/create-prd.md)
+**Tool**: PRD generation prompt (tasks/create-prd.md in your GitHub template)
 
 **Location**: Local development (any Claude Code session)
 
@@ -263,7 +264,7 @@ G:\My Drive\AI_Projects\{ProjectName}\docs\
 
 ### Phase 4: Generate Implementation Tasks
 
-**Tool**: [tasks/generate-tasks.md](Workflow_References/_Templates/github-project-template/tasks/generate-tasks.md)
+**Tool**: Task generation prompt (tasks/generate-tasks.md in your GitHub template)
 
 **Location**: GitHub repo
 
@@ -928,7 +929,7 @@ G:\My Drive\AI_Projects\{ProjectName}\
 ### Required Components
 
 #### 1. Claude Skill: research-project-init
-- **Location**: `Workflow_References/Claude_Skills/research-project-init_v1/`
+- **Location**: Claude Skills (installed per setup guide)
 - **Purpose**: Generate comprehensive research documents
 - **Inputs**: Business idea, clarifying questions
 - **Outputs**: 7 research documents saved to Drive
@@ -936,7 +937,7 @@ G:\My Drive\AI_Projects\{ProjectName}\
 - **Cost**: Included in Claude subscription
 
 #### 2. GitHub Template Repository
-- **Location**: `Workflow_References/_Templates/github-project-template/`
+- **Location**: See setup guide (your fork or the original template)
 - **Purpose**: Provides project structure, task management, session workflow
 - **Includes**:
   - CLAUDE.md template
